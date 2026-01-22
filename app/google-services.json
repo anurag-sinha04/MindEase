@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389452346867",
+    "project_id": "mindease-22473",
+    "storage_bucket": "mindease-22473.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389452346867:android:d5bf3021a59850cab78e86",
+        "android_client_info": {
+          "package_name": "com.example.mentalhealthapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCurpYl6c74uiwLjjNa1nGPFlAU4AglABo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

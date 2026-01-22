@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mentalhealthapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/mentalhealth_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MentalHealthApp">
+        <activity
+            android:name=".AnonymousChat"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".screen5"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen4"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizStatistics"
+            android:exported="true"
+            android:label="Test Statistics"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen3"
+            android:exported="true"
+            android:parentActivityName=".IntroductoryActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen2"
+            android:exported="true"
+            android:parentActivityName=".IntroductoryActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen1"
+            android:exported="true"
+            android:parentActivityName=".IntroductoryActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroductoryActivity"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JournalView"
+            android:exported="true"
+            android:parentActivityName=".JournalActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Detailed"
+            android:exported="true"
+            android:parentActivityName=".NewsActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsActivity"
+            android:exported="true"
+            android:label="News"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MemeActivity"
+            android:exported="true"
+            android:label="Memes"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="true"
+            android:label="Profile"
+            android:parentActivityName=".ProfileActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Writing"
+            android:exported="true"
+            android:label="NewJournal"
+            android:parentActivityName=".JournalActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ToDoListActivity"
+            android:exported="true"
+            android:label="To-Do List"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".JournalActivity"
+            android:exported="true"
+            android:label="Emotion Journal"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="true"
+            android:label="Score"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizActivity"
+            android:exported="true"
+            android:label="Quiz"
+            android:parentActivityName=".MainActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:parentActivityName=".IntroductoryActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true"
+            android:label="Calendar"
+            android:parentActivityName=".JournalActivity"
+            android:resizeableActivity="false"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

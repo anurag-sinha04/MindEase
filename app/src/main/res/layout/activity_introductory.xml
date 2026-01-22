@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".IntroductoryActivity">
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="5dp"
+        android:textSize="20sp"
+        android:backgroundTint="#015912"
+        android:text="Let's Get Started">
+
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="50sp"
+        android:text="Designed &amp; Developed for IDT"
+        android:textSize="14sp"
+        android:textColor="#666666"/>
+
+</LinearLayout>

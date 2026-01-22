@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ProfileEditActivity">
+
+    <TextView
+        android:id="@+id/nText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Create Profile"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="75dp"
+        app:cardPreventCornerOverlap="false">
+
+        <ImageView
+            android:id="@+id/iv_cp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitCenter" />
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/tvEmailProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="7dp"
+        android:hint="User Email"
+        android:paddingStart="5dp"
+        android:textColor="@color/dimgray" />
+    <EditText
+        android:id="@+id/tvNameProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="7dp"
+        android:hint="User Name"
+        android:paddingStart="5dp"
+        android:textColor="@color/dimgray" />
+    <EditText
+        android:id="@+id/tvBioProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:drawableLeft="@drawable/ic_bio"
+        android:drawablePadding="7dp"
+        android:hint="Bio"
+        android:paddingStart="5dp"
+        android:textColor="@color/gray" />
+
+
+    <Button
+        android:id="@+id/btnProfileSave"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/roundbutton"
+        android:text="save"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>

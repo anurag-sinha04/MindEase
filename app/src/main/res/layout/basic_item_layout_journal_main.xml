@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="14dp"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="13dp"
+    android:id="@+id/cardViewJournal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relLayout"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/txtTitleOfDiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="Title"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtPreviewOfDiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTitleOfDiary"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:maxHeight="200dp"
+            android:maxLines="5"
+            android:overScrollMode="never"
+            android:text="preview"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPreviewOfDiary">
+
+            <ImageButton
+                android:id="@+id/imgbtnDelete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/del"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diaryTitle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_writing"
+    tools:context=".JournalView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/jViewContent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jViewTitle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/jViewTitle"
+        app:layout_constraintTop_toBottomOf="@+id/jViewTitle"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/jViewContent1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:gravity="start|top"
+            android:hint="Write Your Journal"
+            android:inputType="textMultiLine"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/jViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:ems="10"
+        android:hint="  Title"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:fontFamily="@font/annie_use_your_telescope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jViewHeading" />
+
+    <TextView
+        android:id="@+id/jViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/almendra_sc"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Read your Journal here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="57dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="280dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
