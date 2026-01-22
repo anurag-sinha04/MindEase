@@ -18,7 +18,6 @@ public class IntroductoryActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_introductory);
         start = findViewById(R.id.start);
